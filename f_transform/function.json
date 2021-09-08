@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "reports-ingredion/{name}",
+      "connection": "MyStorageConnectionString"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "direction": "out",
+      "path":"intermediate-ingredion/{name}",
+      "connection": "MyStorageConnectionString"
+    }
+  ]
+}
