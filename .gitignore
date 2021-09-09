@@ -128,3 +128,4 @@ obj
 appsettings.json
 local.settings.json
 .python_packagesf_transform/__pycache__/
+workspace.code-workspace
