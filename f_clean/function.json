@@ -5,15 +5,15 @@
       "name": "myblob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "reports-ingredion/{name}",
-      "connection": "MyStorageConnectionString"
+      "path": "raw-data/{name}.xlsm",
+      "connection": "storingrediondeveastus_STORAGE"
     },
     {
       "name": "outputblob",
       "type": "blob",
       "direction": "out",
-      "path":"intermediate-ingredion/{name}",
-      "connection": "MyStorageConnectionString"
+      "path":"clean-data/{name}.parquet",
+      "connection": "storingrediondeveastus_STORAGE"
     }
   ]
 }
